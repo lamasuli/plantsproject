@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>سماد | توصيات تسميد ذكية</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Aref+Ruqaa:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+  <h1>🌱 سماد</h1>
+  <p>توصيات تسميد ذكية تدعم صحة النبتة واستدامة الأرض</p>
+</header>
+
+<main class="container">
+
+  <!-- FORM -->
+  <section class="card">
+    <h2>أدخل بيانات نبتتك</h2>
+    <p class="hint">
+      فقط 3 معلومات — والباقي علينا 🌿
+    </p>
+
+    <div class="grid">
+      <input id="plantName" type="text" placeholder="اسم النبتة (مثال: طماطم)" />
+
+      <select id="soil">
+        <option value="">نوع التربة</option>
+        <option>طينية</option>
+        <option>رملية</option>
+        <option>طميية</option>
+        <option>مختلطة</option>
+      </select>
+
+      <select id="season">
+        <option value="">الفصل الحالي</option>
+        <option>ربيع</option>
+        <option>صيف</option>
+        <option>خريف</option>
+        <option>شتاء</option>
+      </select>
+    </div>
+
+    <button onclick="generatePlan()">✨ إنشاء جدول التسميد الذكي</button>
+  </section>
+
+  <!-- HOW TO KNOW SOIL TYPE -->
+  <section class="card soft">
+    <h2>🪴 كيف تعرف نوع تربتك؟</h2>
+
+    <div class="soil-grid">
+      <div class="soil-card">
+        <h4>🌾 تربة رملية</h4>
+        <p>
+          إذا كانت التربة:
+        </p>
+        <ul>
+          <li>خفيفة وتسهل تفتيتها باليد</li>
+          <li>الماء يمر منها بسرعة</li>
+        </ul>
+        <strong>→ فهي تربة رملية</strong>
+      </div>
+
+      <div class="soil-card">
+        <h4>🧱 تربة طينية</h4>
+        <p>
+          إذا كانت التربة:
+        </p>
+        <ul>
+          <li>ناعمة وتلتصق عند البلل</li>
+          <li>تتجمع على شكل كرة</li>
+        </ul>
+        <strong>→ فهي تربة طينية</strong>
+      </div>
+
+      <div class="soil-card">
+        <h4>🌱 تربة طميية (الأفضل)</h4>
+        <p>
+          إذا كانت التربة:
+        </p>
+        <ul>
+          <li>ليست قاسية ولا خفيفة جدًا</li>
+          <li>تحتفظ بالرطوبة دون تجمع ماء</li>
+        </ul>
+        <strong>→ فهي تربة طميية</strong>
+      </div>
+    </div>
+
+    <p class="soil-tip">
+      💡 إذا لم تكن متأكدًا، اختر <b>مختلطة</b> — والذكاء سيعدل الجدول تلقائيًا.
+    </p>
+  </section>
+
+  <!-- RESULT -->
+  <section class="card" id="result" style="display:none;"></section>
+
+  <!-- SUSTAINABILITY -->
+  <section class="sustain">
+    <h2>♻️ لماذا التسميد الذكي مهم للاستدامة؟</h2>
+
+    <div class="sustain-grid">
+      <div class="sustain-card">
+        💧
+        <h4>توفير المياه</h4>
+        <p>تصبح الجذور أكثر كفاءة في امتصاص الماء.</p>
+      </div>
+      <div class="sustain-card">
+        🌍
+        <h4>حماية التربة</h4>
+        <p>يمنع التسميد العشوائي وتدهور التربة.</p>
+      </div>
+      <div class="sustain-card">
+        🌱
+        <h4>نمو صحي</h4>
+        <p>نبات أقوى بأقل موارد.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>🌿 سماد — زراعة أذكى لمستقبل مستدام</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
+``
